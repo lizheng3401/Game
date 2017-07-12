@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>加入我们</title>
+    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            padding-top:60px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">MetaStudio</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">官方论坛</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">登陆/注册</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#modalAbout">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="form">
+        <form class="form-horizontal" role="form" method="post" action="">
+            <h2 class="text-center">加入我们</h2>
+            <div class="form-group">
+                <label for="cName" class="col-md-4 control-label">姓名:</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="cName" placeholder="请输入您的名字">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="radio col-md-offset-4">
+                    <label>
+                        <input type="radio" name="sex" id="man" value="man" checked>
+                        男
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" id="female" value="female">
+                        女
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cName" class="col-md-4 control-label">熟悉的语言:</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="cName" placeholder="请输入您的名字">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-4">
+                    <button type="submit" class="btn btn-default">注册</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center">关于</h4>
+            </div>
+            <div class="modal-body">
+                <h2>MetaStudio工作室</h2>
+                <p>
+                    MetaStudio工作室：致力于游戏开发的地方，期待你的加入<br>
+                    联系方式：QQ群：xxxxxxxxxxx
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../public/javascripts/jquery.js"></script>
+<script src="../public/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

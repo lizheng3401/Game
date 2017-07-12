@@ -1,0 +1,354 @@
+/**
+ * Created by 19251 on 2017.7.12.
+ */
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>首页</title>
+    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            padding: 50px 0px;
+        }
+        .carousel{
+            height:400px;
+            background-color: #000;
+            margin-bottom:40px;
+        }
+        .carousel .item{
+            height:400px;
+            background-color: #000;
+        }
+        .carousel img{
+            width:100%;
+        }
+        .carousel-caption{
+            font-size: 20px;
+            line-height: 10px;
+        }
+        img.img-circle{
+            height:100px;
+            width:100px;
+        }
+        #summary_container .col-md-4{
+            text-align: center;
+        }
+        hr.divider{
+            margin:30px 0px;
+        }
+        .main{
+            margin:0px 80px;
+        }
+        .feature{
+            padding:20px 0px;
+        }
+        .heading{
+            font-size: 50px;
+            color: #2aabd2;
+        }
+        .subHeading{
+            font-size: 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">MetaStudio</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">官方论坛</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        游戏分类<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">电脑端</li>
+                        <li> <a href="#">某某游戏</a> </li>
+                        <li> <a href="#">某某游戏</a> </li>
+                        <li> <a href="#">某某游戏</a> </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">手机端</li>
+                        <li><a href="#">某某游戏</a></li>
+                        <li><a href="#">某某游戏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#modalServer">客服中心</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">登陆/注册</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#modalAbout">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="../public/images/Fuluolan.png" alt="游戏一">
+            <div class="carousel-caption">
+                <h1>某某游戏</h1>
+                <p>游戏简介</p>
+                <p><button type="button" class="btn btn-primary">点击下载</button></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../public/images/LingLong.png" alt="游戏二">
+            <div class="carousel-caption">
+                <h1>某某游戏</h1>
+                <p>游戏简介</p>
+                <p><button type="button" class="btn btn-primary">点击下载</button></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../public/images/TaTa.png" alt="游戏三">
+            <div class="carousel-caption">
+                <h1>某某游戏</h1>
+                <p>游戏简介</p>
+                <p><button type="button" class="btn btn-primary">点击下载</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container" id="summary_container">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-circle" src="../public/images/LingLong.png" alt="纸女">
+            <h2>纸女</h2>
+            <p>纸女是一个高爆发高伤害的刺客</p>
+            <p><a class="btn btn-default" href="#">点我下载</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="../public/images/Fuluolan.png" alt="纸女">
+            <h2>火</h2>
+            <p>火是一个高爆发高伤害的刺客</p>
+            <p><a class="btn btn-default" href="#">点我下载</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="../public/images/TaTa.png" alt="纸女">
+            <h2>红莲</h2>
+            <p>红莲是一个攻守兼备的战士</p>
+            <p><a class="btn btn-default" href="#">点我下载</a></p>
+        </div>
+    </div>
+    <hr class="divider">
+</div>
+
+<div class="main">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" id="tabList">
+        <li role="presentation" class="active"><a href="#tab-paper" aria-controls="home" role="tab" data-toggle="tab">纸女</a></li>
+        <li role="presentation"><a href="#tab-fire" aria-controls="profile" role="tab" data-toggle="tab">火</a></li>
+        <li role="presentation"><a href="#tab-red" aria-controls="messages" role="tab" data-toggle="tab">红莲</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="tab-paper">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <h2 class="heading">纸女 <span class="subHeading">刺客</span></h2>
+                    <p>
+                        纸女连招推荐一种(ML+)E+Q+(F+)MR，
+                        一共7.2秒打完一套。起手E，(可以先放个普攻)没中等6秒，
+                        中了他基本就死了，一套上去带他走。Q起手太危险也不稳定，
+                        MR起手有点浪费输出也不是不可以看你喜好吧。关于R技能，
+                        374%的超高攻击力加成(面板好看然而具体计算公式并不知晓)，
+                        用来拆塔，补伤害起身防守等相当优秀。纸女R技能动画效果并不是随机的，
+                        她的纸锥掉落是固定动画，但是伤害判定比较迷我研究了好久也没摸清她R具体规律，
+                        大概来说离敌人越近敌人所受到的伤害和硬直效果越多。
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img class="img" src="../public/images/LingLong.png" style="height: 300px;">
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-fire">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <h2 class="heading">火 <span class="subHeading">刺客</span></h2>
+                    <p>
+                        普通状态下赤的Q技能更多的是用来补刀、打断或者逃跑来用，
+                        因为你的Q命中敌人后你也无法有效的使用其他技能来连招，
+                        哪怕你用上SP(空格键)+R也无法打出最大值的伤害（因为敌人有倒地霸体和保护）。
+                        持刀状态下使用Q可以接上E技能。在墙角更是可以用持刀下的Q来进行连招，
+                        因为浮空高度可以接上普攻。另外Q技能技能使用后用专属技能（焰化）
+                        可以停留在原地跳跃而不会返回使用前的位置。当然使用Q后被打断的时候也
+                        会停留在Q使用后的位置。
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img class="img" src="../public/images/Fuluolan.png" style="height: 300px;">
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-red">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <h2 class="heading">红莲 <span class="subHeading">战士</span></h2>
+                    <p>
+                        红莲连招必须把握好Q和MR的时机，Q可以把倒地的敌人弹起来浮空，而对浮空的敌人MR可以使敌人浮空高度增高，加大连击自由度。
+                        开始3段ML+普通MR（3段ML敌人还是处于站立状态，没必要接强化版的MR）+3段ML后，
+                        接EE（这里接普通E不能使敌人浮空）+3段ML，滚轮等敌人倒地（这一步比较关键，
+                        等待敌人倒地是为了延长连击时间，使MR有足够时间恢复）
+                        ，使用强化版Q让敌人从地面弹起来接着3段ML+SP+3段ML，
+                        用MR令敌人大幅度浮空迅速开R（不要忘记用R时哒哒哒地点鼠标···）
+                        R完后马上接强化Q让敌人再次弹起，E+F打完一套2400伤害
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img class="img" src="../public/images/TaTa.png" style="height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">登陆</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="POST" action="" id="login_form">
+                    <div class="form-group">
+                        <label for="UserAccount" class="col-sm-2 control-label">账户:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="UserAccount" placeholder="请输入账户" name="account">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="UserPwd" class="col-sm-2 control-label">密码:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="UserPwd" placeholder="请输入密码" name="pwd">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox col-sm-offset-2">
+                            <label>
+                                <input type="checkbox">记住密码
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2 col-sm-offset-4">
+                            <a type="button" class="btn btn-default" href="register.html">注册</a>
+                        </div>
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-default">登陆</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center">关于</h4>
+            </div>
+            <div class="modal-body">
+                <h2>MetaStudio工作室</h2>
+                <p>
+                    MetaStudio工作室：致力于游戏开发的地方，期待你的加入<br>
+                    联系方式：QQ群：xxxxxxxxxxx
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalServer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center">反馈建议</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" id="suggestion_form" method="post" action="">
+                    <div class="form-group">
+                        <label for="User-contact" class="control-label">您的联系方式:QQ或者邮箱</label>
+                        <input type="text" class="form-control" id="User-contact" name="User-contact">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">您的建议:</label>
+                        <textarea class="form-control" id="message-text" name="msg-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary" >发送</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="divider">
+<footer>
+    <p class="text-center">CopyRight by &copy;MetaStudio 2017</p>
+    <p style="float: right;right: 10px;"><a href="#top"><em>回到顶部</em></a></p>
+</footer>
+
+<script src="../public/javascripts/jquery.js"></script>
+<script src="../public/bootstrap/js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
+
